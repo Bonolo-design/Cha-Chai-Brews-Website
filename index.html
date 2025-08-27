@@ -1,41 +1,135 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cha-Chai Brews</title>
-    <link rel="stylesheet" href="styles.css">
-    <body>
-        { font-family: 'Arial', sans-serif; 
-        margin: 0;
-        padding: 0;
-        background-color: <div id="fdfaf6"></div>;
-        color: #2b2b2b; }
-    </body>
-    <header>
-        <h1>Cha-Chai Brews</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cha-Chai Brews</title>
+  <link rel="stylesheet" href="styles.css">
 
-</html>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif; 
+      margin: 0;
+      padding: 0;
+      background-color: #fdfaf6;
+      color: #2b2b2b;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url("https://images.pexels.com/photos/13696472/pexels-photo-13696472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .container input {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border: none;
+      background: #c28f5c;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .toggle-btn {
+      margin-top: 1rem;
+      background: #eee;
+      color: #333;
+    }
+  </style>
 </head>
-    <hero image="https://images.pexels.com/photos/13696472/pexels-photo-13696472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-        <h2>Welcome to Cha-Chai Brews</h2>
-        <p>From Cha to Chai — Brewing Stories, One Cup at a Time</p>
-<div class="container">
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Cha-Chai Brews</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to Cha-Chai Brews</h2>
+      <p>From Cha to Chai — Brewing Stories, One Cup at a Time</p>
+    </div>
+  </section>
+
+  <!-- SIGN IN FORM -->
+  <div class="container">
     <h2 id="form-title">Sign In</h2>
     <form id="authForm">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <input type="text" id="username" placeholder="Username (Sign Up only)" style="display:none;">
-        <button type="submit" id="submitBtn">Sign In</button>
-    </form>
-    <button class="toggle-btn" id="toggleBtn">Don't have an account? Sign Up</button>
-</div>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Passw
