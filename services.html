@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cha-Chai Brews | Menu</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfaf6;
+      color: #2b2b2b;
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2b2b2b;
+      font-weight: bold;
+    }
+
+    .menu-section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .menu-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #6b4226;
+    }
+
+    .menu-category {
+      margin-bottom: 3rem;
+    }
+
+    .menu-category h3 {
+      margin-bottom: 1rem;
+      color: #c28f5c;
+      font-size: 1.5rem;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .menu-item h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .menu-item p {
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .menu-item span {
+      font-weight: bold;
+      color: #6b4226;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Cha-Chai Brews</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+
+    <!-- Chai Blends -->
+    <div class="menu-category">
+      <h3>Chai Blends</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1050716504/photo/homemade-chai-tea-latte-with-anise-and-cinnamon-stick-in-glass-mug-top-view.jpg?s=1024x1024&w=is&k=20&c=x0JyPbqtuhvW_5OzpnWw1vT-OZKOtuUky5xSo57efKI=  " alt="Masala Chai">
+          <h4>Masala Chai</h4>
+          <p>Traditional spiced chai brewed with milk.</p>
+          <span>R35</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/110941418/photo/spicy-chai-latte.jpg?s=1024x1024&w=is&k=20&c=QxHBK7Bt0isinesSWgbHS5EJQ6LC3e4ktFz0cnIA9Kg=" alt="Vanilla Chai">
+          <h4>Vanilla Chai</h4>
+          <p>Sweet vanilla infusion with warm spices.</p>
+          <span>R40</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialty Coffee -->
+    <div class="menu-category">
+      <h3>Specialty Coffee</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/cappuccino.jpg" alt="Cappuccino">
+          <h4>Cappuccino</h4>
+          <p>Rich espresso topped with frothed milk.</p>
+          <span>R30</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1624134359/photo/iced-of-coffee-cup-on-glass-cup-and-beans-coffee-mokacoffee-pot-place-on-white-table-copy.jpg?s=1024x1024&w=is&k=20&c=WQU6_BZPcNsxeVpaG5v--Iu2ya_y6slUEKWsLdrJxmM=" alt="Iced Latte">
+          <h4>Iced Latte</h4>
+          <p>Chilled espresso with cold milk and ice.</p>
+          <span>R35</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Herbal Teas -->
+    <div class="menu-category">
+      <h3>Herbal Teas</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1392917121/photo/freshly-brewed-rooibos-tea-on-wooden-table-closeup.jpg?s=1024x1024&w=is&k=20&c=2xU3WxXd5IZNxkI5L05z1tw9bWlx4j1AVnm_DQv-tJ4=  " alt="Rooibos Tea">
+          <h4>Rooibos Tea</h4>
+          <p>South African classic, naturally caffeine-free.</p>
+          <span>R25</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/868061248/photo/fresh-mint-tea.jpg?s=1024x1024&w=is&k=20&c=MBSh838NFWUXKGVQqFByhHfQrCH5ssMztxnMWqlDCoI=" alt="Peppermint Tea">
+          <h4>Peppermint Tea</h4>
+          <p>Refreshing mint leaves brewed to perfection.</p>
+          <span>R25</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Light Bites -->
+    <div class="menu-category">
+      <h3>Light Bites</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1130180347/photo/scones-with-strawberry-jam-and-whipped-cream.jpg?s=1024x1024&w=is&k=20&c=ZKUnlrUmNjuolrD-4Hv68IknumopJEI0c1nqHoAXZbY=  " alt="Scone with Jam">
+          <h4>Scone with Jam</h4>
+          <p>Fluffy scone served with butter & jam.</p>
+          <span>R30</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1431912759/photo/cream-cheese-and-tomato-toast-on-a-wooden-board.jpg?s=1024x1024&w=is&k=20&c=Tv9vFqgDUWIHEN13e9uR1lpegL_Fa0xzKrKhps6SqNM= " alt="Toast Sandwich">
+          <h4>Toast Sandwich</h4>
+          <p>Toasted sourdough with cheese & tomato.</p>
+          <span>R45</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-category">
+      <h3>Seasonal Specials</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1180568415/photo/halloween-pumpkin-cappuccino-coffee-art.jpg?s=1024x1024&w=is&k=20&c=ebvqal7_PkkVwoetpshmxmDvipMXoR-I0gjquPoUsT4=  " alt="Pumpkin Spice Latte">
+          <h4>Pumpkin Spice Latte</h4>
+          <p>Autumn-inspired latte with pumpkin spice blend.</p>
+          <span>R50</span>
+        </div>
+        <div class="menu-item">
+          <img src="https://media.istockphoto.com/id/1356367433/photo/soy-milk-pouring-in-matcha-ice-tea.jpg?s=1024x1024&w=is&k=20&c=gWwegZTnnkdNMu8Fi6ccJFmwF0BNI7SgnJOVDF46p98=" alt="Iced Matcha">
+          <h4>Iced Matcha</h4>
+          <p>Chilled matcha green tea with milk and ice.</p>
+          <span>R45</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
+
