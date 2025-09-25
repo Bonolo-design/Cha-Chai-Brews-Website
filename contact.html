@@ -1,0 +1,158 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cha-Chai Brews | Contact Us</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #000;
+    }
+
+    header {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    .locations {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .location-card {
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    form {
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      background: #000;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cha-Chai Brews</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="enquiries.html">Events & Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section">
+    <h2>Our Locations</h2>
+    <div class="locations">
+      <div class="location-card">
+        <h4>Braamfontein, Johannesburg</h4>
+        <p>158 Civic Boulevard, Braamfontein, Johannesburg, 2001</p>
+        <p>Phone: +27 11 407 6111</p>
+        <p>Email: johannesburg@chachaibrews.co.za</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.123456789!2d28.047305!3d-26.204103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95719a0e123456%3A0x1234567890abcdef!2s158%20Civic%20Boulevard%2C%20Braamfontein%2C%20Johannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1693097623456!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <div class="location-card">
+        <h4>Pretoria, Gauteng</h4>
+        <p>129 Luttig Street, Pretoria West, Pretoria, 0183</p>
+        <p>Phone: +27 12 345 6789</p>
+        <p>Email: pretoria@chachaibrews.co.za</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.315930433011!2d28.240310!3d-25.746103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e5f59e2c17b%3A0x57e6012e9c6d65f4!2s129%20Luttig%20St%2C%20Pretoria%20West%2C%20Pretoria%2C%200183%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1693099000000!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+  </section>
+  <section class="section">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Reason for contact" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
